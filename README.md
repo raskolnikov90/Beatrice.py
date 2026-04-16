@@ -60,7 +60,7 @@ While this tool can make some binaries evade AVs on its own, it is best used com
 
 **AdaptixC2** payload with IAT Hiding → Already evasive against Defender but tool may help if Microsoft creates more signatures, evades Elastic YARA rules.
 
-CobaltStrike stageless payload → Bypassed detection bytes but still detected by few strings.
+**CobaltStrike** stageless payload → Bypassed detection bytes but still detected by few strings.
 
 ### Raw binaries / Shellcode (.bin)
 
@@ -76,7 +76,7 @@ Using [DefenderYara](https://github.com/roadwy/DefenderYara/tree/main/Trojan/Win
 
 **AdaptixC2** payload with IAT Hiding → Evades YARA rules.
 
-CobaltStrike stageless payload → Bypassed detection bytes but still detected by few strings.
+**CobaltStrike** stageless payload → Bypassed detection bytes but still detected by few strings.
 
 **Donut** shellcode  → Evades YARA rules.
 
