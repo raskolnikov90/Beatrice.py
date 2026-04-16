@@ -88,7 +88,7 @@ Notes on CobaltStrike: I don’t own license, I have access to a course that pro
 
 Golang compiled binaries that use Garble for obfuscation may break. 
 
-Despite working most of the time some binaries may still break, that’s why safe mode was added an option to just use the most basic features.
+Despite working most of the time some binaries may still break, that’s why safe mode was added as an option to just use the most basic features.
 
 # Support Me
 
