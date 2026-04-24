@@ -449,7 +449,7 @@ def main():
         and "0x" in arit
         ):
             bytelist.append(arit)
-        elif arit.startswith("mov ") and "byte ptr" in arit and arit.count("+") > 1 and "rsp" not in arit:
+        elif arit.startswith("mov ") and "byte ptr" in arit and arit.count("+") > 1 and "rsp" not in arit and "*1" in arit:
             movshift.append(arit)
         elif arit.startswith("mov") and "xmm" in arit:
             movdlist.append(arit)
