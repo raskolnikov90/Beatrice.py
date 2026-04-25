@@ -450,7 +450,8 @@ def main():
         ):
             bytelist.append(arit)
         elif arit.startswith("mov ") and "byte ptr" in arit and arit.count("+") > 1 and "rsp" not in arit:
-            movshift.append(arit)
+            if "*1" in arit or "*" not in arit:
+                movshift.append(arit)
         elif arit.startswith("mov") and "xmm" in arit:
             movdlist.append(arit)
         elif arit.startswith("movzx") and "word ptr" in arit:
