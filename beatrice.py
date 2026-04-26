@@ -631,6 +631,9 @@ def main():
             instr = b.split(";")
             half1 = instr[0][4:]
             half2 = instr[1][4:]
+            reg = b[4:b.index(",")]
+            if b.count(reg) > 2:
+                continue
             enc1 = encode(b)
             enc2 = encode(f"mov {half2}; add {half1}")
             
