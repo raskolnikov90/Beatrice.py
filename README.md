@@ -38,13 +38,23 @@ Usage: beatrice.py <binary>
 ### It will NOT:
 
 - Be a one size fits all solution.
-- Modify strings, so detection is still possible based on strings.
+- Modify strings, only on the Pro Edition
 - Modify imports or calls to Windows API functions that can be detected by some AVs and EDRs.
 - Completely evade behavior based detection. While this modifies the machine code enough to sometimes trick behavior based detection it won’t change the core functionality leading to still possibilities for detection.
 
 While this tool can make some binaries evade AVs on its own, it is best used combined with other evasion techniques (Examples: Modify shellcode to be used with a loader, help with custom or modified tooling)
+# Pro Edition
+A paid version of this tool is available at: https://buymeacoffee.com/lainkusanagi/e/531266 
 
-# Tests against Windows Defender and Elastic YARA rules ( April 2026 )
+### Pro Edition features:
+
+- More alternative encodings for assembly instructions.
+- Parse bytes from YARA rules and DefenderCheck output and use them to generate more patches.
+- Parse strings from YARA rules to modify strings on binaries and executable.
+- Generate new potential detection bytes that can be used to create YARA rules.
+- Includes a PDF showing how the tool can be used for Antivirus and EDR evasion as well as how to use it to test and create detection rules.
+
+# Tests against Windows Defender and Elastic YARA rules ( April 2026 Public Version )
 
 ### Executables (.exe)
 
@@ -90,6 +100,3 @@ Golang compiled binaries that use Garble for obfuscation may break.
 
 Despite working most of the time some binaries may still break, that’s why safe mode was added as an option to just use the most basic features.
 
-# Support Me
-
-https://buymeacoffee.com/lainkusanagi
