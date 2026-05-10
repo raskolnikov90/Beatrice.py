@@ -48,9 +48,10 @@ A paid version of this tool is available at: https://buymeacoffee.com/lainkusana
 
 ### Pro Edition features:
 
-- More alternative encodings for assembly instructions.
+- Rewritten and improved alternative encodings for assembly instructions.
 - Parse bytes from YARA rules and DefenderCheck output and use them to generate more patches.
 - Parse strings from YARA rules to modify strings on binaries and executable.
+- Obfuscate Import Adress Table
 - Generate new potential detection bytes that can be used to create YARA rules.
 - Includes a PDF showing how the tool can be used for Antivirus and EDR evasion as well as how to use it to test and create detection rules.
 
